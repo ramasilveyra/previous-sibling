@@ -1,5 +1,9 @@
-
-var traverse = require('traverse');
+var traverse;
+try {
+  traverse = require('yields-traverse');
+} catch (e) {
+  traverse = require('traverse');
+}
 
 
 /**
